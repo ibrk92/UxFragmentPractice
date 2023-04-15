@@ -21,8 +21,6 @@ public class FirstFragment extends Fragment {
 private FragmentFirstBinding binding;
 
 
-
-
     public FirstFragment() {
         // Required empty public constructor
     }
