@@ -10,21 +10,33 @@
         android:id="@+id/textView_second"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="192dp"
-        android:text="This is second fragment!"
+        android:layout_marginBottom="98dp"
+        android:text="@string/txt_secondFragment"
         android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/button_second"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintStart_toStartOf="parent" />
 
     <Button
         android:id="@+id/button_second"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="58dp"
+        android:layout_marginEnd="19dp"
         android:onClick="goToFirst"
-        android:text="Previous"
+        android:text="TO SPINNER"
+        app:layout_constraintBaseline_toBaselineOf="@+id/buttontoListView"
+        app:layout_constraintEnd_toStartOf="@+id/buttontoListView"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/buttontoListView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="12dp"
+        android:layout_marginBottom="198dp"
+        android:onClick="goToList"
+        android:text="TO LISTVIEW"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView_second" />
+        app:layout_constraintStart_toEndOf="@+id/button_second" />
 </androidx.constraintlayout.widget.ConstraintLayout>

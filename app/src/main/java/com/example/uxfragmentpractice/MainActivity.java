@@ -86,17 +86,7 @@ public class MainActivity extends AppCompatActivity {
         colorSpecViewModel = new ViewModelProvider(this).get(ColorSpecViewModel.class);
         colorSpecViewModel.loadColors(ColorSpecs);
 
-
-
-
-
-
-
-
-
-
     }
-
 
 
     @Override
@@ -126,8 +116,5 @@ public class MainActivity extends AppCompatActivity {
         }
         return super.onOptionsItemSelected(item);
     }
-
-
-
 
 }
